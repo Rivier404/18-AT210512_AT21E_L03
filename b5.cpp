@@ -23,11 +23,11 @@ int main (){
 	if (delta > 0){	
     x1=(-b+sqrt(delta))/(2*a);
     x2=(-b-sqrt(delta))/(2*a);
-    printf("x1=%f\n x2=%f", x1, x2);    
+    printf("x1=.2%f\n x2=.2%f", x1, x2);    
 }
 else if (delta==0) {
 	x3=-b/(2*a);
-	printf("x=%f",x3);
+	printf("x=.2%f",x3);
 }
 else {
 	printf("error");
