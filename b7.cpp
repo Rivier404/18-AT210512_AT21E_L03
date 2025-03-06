@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main (){
 	float a;
+	printf("nhap vao diem cua ban");
 	scanf("%f",&a);
 	
 	
