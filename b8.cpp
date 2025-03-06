@@ -17,6 +17,21 @@
 	}
 	
 	int main (){	
+        printf("nhap vao 3 canh cua tam giac: ");
 	scanf("%d%d%d",&a,&b,&c);
-	
+	switch ()
+		case 1:
+printf("tam giac deu");
+break;
+case 2:
+printf("tam giac can");
+	break;
+	case 3:
+	printf("tam giac vuong can");
+	break;
+	case 4:
+	printf("tam giac vuong");
+case 5:
+printf("tam giac thuong");
+}
 }
