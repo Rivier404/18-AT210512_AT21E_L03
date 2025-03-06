@@ -4,6 +4,7 @@
 int main (){
 	double a,b,c;
 	double delta,x,x1,x2,x3;
+	printf("nhap vao lan luot 3 so a b c");
 	scanf("%lf%lf%lf",&a,&b,&c);
     if (a==0&&b==0&&c==0){
     	printf("vo so nghiem");
