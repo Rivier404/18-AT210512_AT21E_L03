@@ -5,9 +5,11 @@ int main (){
 	scanf("%d%d%d",&ngay,&thang,&nam);
 	if(ngay <= 0 || ngay >31) {
 		printf("???");
+		return 0;
 	}
 	if (thang <=0 || thang >12){
 		printf("????");
+		return 0;
 	}
 	printf("hom nay la ngay %d/%d/%d",ngay,thang,nam);
 }
