@@ -15,7 +15,7 @@ int main (){
             printf("vo nghiem.\n");
         } else {
             double x = -c / b;
-            printf("%f\n", x);
+            printf("x=%f\n", x);
         }
         return 0;	
 	} 
@@ -23,11 +23,11 @@ int main (){
 	if (delta > 0){	
     x1=(-b+sqrt(delta))/(2*a);
     x2=(-b-sqrt(delta))/(2*a);
-    printf("%f\n%f", x1, x2);    
+    printf("x1=%f\n x2=%f", x1, x2);    
 }
 else if (delta==0) {
 	x3=-b/(2*a);
-	printf("%f",x3);
+	printf("x=%f",x3);
 }
 else {
 	printf("error");
