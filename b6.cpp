@@ -15,6 +15,6 @@ int main (){
 	else {
 	y=(f*a-d*c)/(e*a-d*b);
 	x=(c-b*y)/a;
-	printf("x=%f y=%f",x,y);
+	printf("x=%.2f y=%.2f",x,y);
 }
 }
