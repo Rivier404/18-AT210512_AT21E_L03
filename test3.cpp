@@ -1,18 +1,19 @@
 #include <stdio.h>
 int main (){
 	int a,b;
+	printf("nhap 2 so a b");
 	scanf("%d%d",&a,&b);
 	if(b !=0) {
 	
-	printf("%d\n",a+b);
-	printf("%d\n",a-b);
-	printf("%d\n",a*b);
-	printf("%d\n",a/b);
+	printf("a+b=%d\n",a+b);
+	printf("a-b=%d\n",a-b);
+	printf("a*b=%d\n",a*b);
+	printf("a/b=%d\n",a/b);
 }
 else {
-		printf("%d\n",a+b);
-	printf("%d\n",a-b);
-	printf("%d\n",a*b);
+		printf("a+b=%d\n",a+b);
+	printf("a-b=%d\n",a-b);
+	printf("a*b=%d\n",a*b);
 	printf("Error\n");
 }
 }
