@@ -13,7 +13,8 @@
 	    return 5;
 	}
 	float dientichchuvi (float a, float b, float c) {
-		return 
+		float p=(a+b+c)/2.0;
+		return sqrt(p*(p-a)(p-b)*(p-c));
 	}
 	
 	int main (){	
