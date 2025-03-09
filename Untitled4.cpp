@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main (){
+	int i, n;
+	float max,min;
+	printf("nhap vao so phan tu trong mang:");
+	scanf("%d",&n);
+	if(n<=0){
+		printf("???");
+		return 0;
+	}
+	float* ptr =(float*) malloc(n*sizeof(float));
+	printf("nhap cac phan tu trong mang :");
+	for (i=0;i<n;i++){
+		scanf("%f",&ptr[i]);
+		max=min=ptr[0];
+		if(ptr[i]>=max){
+			max=ptr[i];
+		}
+		if(ptr[i]<=min){
+			min=ptr[i];
+		}
+		}
+		 printf("gia tri cua max la %.2f\n",max);
+	printf("gia tri min la:%.2f\n",min);
+			for (i=0;i<n;i++){
+			if(ptr[i]==max){
+				printf("phan tu max nam o: %d\n",i);
+			}
+		for (i=0;i<n;i++){
+			if(ptr[i]==min){
+				printf("phan tu min nam o: %d",i);
+			}
+		}
+	
+   
+	
+free(ptr);
+}
+}
