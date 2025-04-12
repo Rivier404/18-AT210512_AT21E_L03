@@ -27,8 +27,8 @@ int main(){
 		}
 	}   
     printf("Nhap ma tran 2: ");
-     for(int i=0;i<m;i++){
-    	for (int j=0;j<n;j++){
+     for(int i=0;i<n;i++){
+    	for (int j=0;j<p;j++){
     		printf("B[%d][%d]= ",i+1,j+1);
     		scanf("%d",&b[i][j]);
 		}
