@@ -11,11 +11,14 @@ int main(){
     int **a = (int **)malloc(m * sizeof(int *));
     int **b = (int **)malloc(n * sizeof(int *));
     int **c = (int **)malloc(m * sizeof(int *));
-    for (int i = 0; i < m; i++) { 
-    a[i] = (int *)malloc(n * sizeof(int)); 
-    b[i] = (int *)malloc(n * sizeof(int));
-    c[i] = (int *)malloc(n * sizeof(int));
-}
+    for (i=0;i<m;i++) {
+        a[i] = (int *)malloc(n * sizeof(int)); 
+        c[i] = (int *)malloc(p * sizeof(int));  
+    }
+    for (i=0;i<n;i++) {
+        b[i] = (int *)malloc(p * sizeof(int));  
+    }
+
  printf("Nhap ma tran 1: ");
     for(int i=0;i<m;i++){
     	for (int j=0;j<n;j++){
@@ -45,10 +48,13 @@ int main(){
         }
         printf("\n");
     }
-    for (int i=0;i<m;i++) free(a[i]);
-    for (int i=0;i<n;i++) free(b[i]);
-    for (int i=0;i<m;i++) free(c[i]);
-
+    for (i=0;i<m;i++) {
+        free(a[i]); 
+        free(c[i]); 
+    }
+    for (i=0;i<n;i++) {
+        free(b[i]); 
+    }
     free(a);
     free(b);
     free(c);
